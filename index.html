@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="JS/jquery-3.4.1.min.js"></script>
+    <style>
+        .helo {
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+
+        }
+        .helo2 {
+            color: brown;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* font-style: italic; */
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+           $(".klik").click(function(){
+               $(".helo").fadeIn("slow")
+           })
+           $(".klik2").dblclick(function(){
+               $(".helo").fadeOut("slow")
+           })
+           $(".klik3").mouseover(function(){
+               $(".helo").fadeTo("2000","0.2")
+           })
+        });
+    </script>
+    
+</head>
+<body>
+   <div class="helo"></div>
+   <button class="klik"> fade in</button>
+   <button class="klik2"> fade out</button>
+   <button class="klik3"> fade to</button>
+</body>
+</html>
